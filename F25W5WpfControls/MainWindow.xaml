@@ -22,5 +22,13 @@
         </GroupBox>
         <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="200" Canvas.Top="140" Click="btnGetHobbies_Click"/>
         <TextBlock x:Name="txtOutput" Canvas.Left="507" TextWrapping="Wrap" Canvas.Top="285" Height="100" Width="253" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FFC3F1E5"/>
+        <GroupBox Height="143" Header="Gender" Width="173" Canvas.Left="22" Canvas.Top="262" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Canvas>
+                <RadioButton x:Name="rdoFemale" Content="Female" Canvas.Left="10" Canvas.Top="10"/>
+                <RadioButton x:Name="rdoMale" Content="Male" Canvas.Left="10" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <RadioButton x:Name="rdoOther" Content="Other" Canvas.Left="10" Canvas.Top="72" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            </Canvas>
+        </GroupBox>
+        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="200" Canvas.Top="283" Click="btnGetGender_Click"/>
     </Canvas>
 </Window>
