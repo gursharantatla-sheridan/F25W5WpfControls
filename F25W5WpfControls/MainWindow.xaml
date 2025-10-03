@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" FontSize="20" FontWeight="Bold">
     <Canvas>
-        <WrapPanel Canvas.Left="22" Canvas.Top="25" Width="138" Height="74" Background="#FFE6E0E0">
+        <WrapPanel Canvas.Left="22" Canvas.Top="40" Width="138" Height="74" Background="#FFE6E0E0" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </WrapPanel>
-        <Image Height="81" Canvas.Left="179" Canvas.Top="21" Width="154" Source="/Car.png"/>
+        <Image Height="81" Canvas.Left="183" Canvas.Top="40" Width="154" Source="/Car.png"/>
         <GroupBox Height="144" Header="Hobbies" Width="173" Canvas.Left="22" Canvas.Top="119" HorizontalAlignment="Center" VerticalAlignment="Top">
             <Canvas>
                 <CheckBox x:Name="chkGardening" Content="Gardening" Canvas.Left="10" Canvas.Top="10"/>
@@ -30,7 +30,7 @@
             </Canvas>
         </GroupBox>
         <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="200" Canvas.Top="283" Click="btnGetGender_Click"/>
-        <ComboBox x:Name="cmbCities" Canvas.Left="375" Canvas.Top="29" Width="150" SelectedIndex="0" HorizontalAlignment="Left" VerticalAlignment="Center" SelectionChanged="cmbCities_SelectionChanged">
+        <ComboBox x:Name="cmbCities" Canvas.Left="380" Canvas.Top="48" Width="150" SelectedIndex="0" HorizontalAlignment="Left" VerticalAlignment="Top" SelectionChanged="cmbCities_SelectionChanged">
             <ComboBoxItem Content="Select a city"/>
             <ComboBoxItem Content="Toronto"/>
             <ComboBoxItem Content="Paris"/>
@@ -38,6 +38,28 @@
             <ComboBoxItem Content="Tokyo"/>
             <ComboBoxItem Content="Sydney"/>
         </ComboBox>
-        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="530" Canvas.Top="29" Click="btnGetCity_Click"/>
+        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="554" Canvas.Top="49" Click="btnGetCity_Click"/>
+        <ListBox x:Name="lstCars" Height="174" Width="175" Canvas.Left="375" Canvas.Top="89" SelectionChanged="lstCars_SelectionChanged" SelectionMode="Extended">
+            <ListBoxItem Content="Honda"/>
+            <ListBoxItem Content="Toyota"/>
+            <ListBoxItem Content="Ford"/>
+            <ListBoxItem Content="Kia"/>
+            <ListBoxItem Content="Mazda"/>
+        </ListBox>
+        
+        <Menu Height="24" Width="800" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New"/>
+                <MenuItem Header="_Open"/>
+                <MenuItem Header="_Save"/>
+                <Separator/>
+                <MenuItem Header="E_xit" Click="MenuItem_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Cu_t"/>
+                <MenuItem Header="_Copy"/>
+                <MenuItem Header="_Paste"/>
+            </MenuItem>
+        </Menu>
     </Canvas>
 </Window>

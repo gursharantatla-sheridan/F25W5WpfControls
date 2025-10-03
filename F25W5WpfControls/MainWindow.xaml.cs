@@ -69,5 +69,18 @@ namespace F25W5WpfControls
             else
                 txtOutput.Text = "Please select your city";
         }
+
+        private void lstCars_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lstCars.SelectedItem != null)
+            {
+                txtOutput.Text = ((ListBoxItem)lstCars.SelectedItem).Content.ToString();
+            }
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
