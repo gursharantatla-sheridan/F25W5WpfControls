@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        <WrapPanel Canvas.Left="100" Canvas.Top="100" Width="200" Height="100">
+        <WrapPanel Canvas.Left="22" Canvas.Top="25" Width="126" Height="46" Background="#FFE6E0E0">
             <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </WrapPanel>
+        <Image Height="81" Canvas.Left="179" Canvas.Top="21" Width="154" Source="/Car.png"/>
     </Canvas>
 </Window>
