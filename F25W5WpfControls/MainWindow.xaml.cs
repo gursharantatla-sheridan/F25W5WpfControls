@@ -52,5 +52,22 @@ namespace F25W5WpfControls
 
             txtOutput.Text = gender;
         }
+
+        private void btnGetCity_Click(object sender, RoutedEventArgs e)
+        {
+            if (cmbCities.SelectedIndex > 0)
+                txtOutput.Text = cmbCities.Text;
+            else
+                txtOutput.Text = "Please select your city";
+        }
+
+        private void cmbCities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (cmbCities.SelectedIndex > 0)
+                //txtOutput.Text = cmbCities.Text;
+                txtOutput.Text = ((ComboBoxItem)cmbCities.SelectedItem).Content.ToString();
+            else
+                txtOutput.Text = "Please select your city";
+        }
     }
 }

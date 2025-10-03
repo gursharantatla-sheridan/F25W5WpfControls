@@ -30,5 +30,14 @@
             </Canvas>
         </GroupBox>
         <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="200" Canvas.Top="283" Click="btnGetGender_Click"/>
+        <ComboBox x:Name="cmbCities" Canvas.Left="375" Canvas.Top="29" Width="150" SelectedIndex="0" HorizontalAlignment="Left" VerticalAlignment="Center" SelectionChanged="cmbCities_SelectionChanged">
+            <ComboBoxItem Content="Select a city"/>
+            <ComboBoxItem Content="Toronto"/>
+            <ComboBoxItem Content="Paris"/>
+            <ComboBoxItem Content="Cape Town"/>
+            <ComboBoxItem Content="Tokyo"/>
+            <ComboBoxItem Content="Sydney"/>
+        </ComboBox>
+        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="530" Canvas.Top="29" Click="btnGetCity_Click"/>
     </Canvas>
 </Window>
