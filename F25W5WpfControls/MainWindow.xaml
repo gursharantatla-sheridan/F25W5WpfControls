@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:F25W5WpfControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <Canvas>
+        <WrapPanel Canvas.Left="100" Canvas.Top="100" Width="200" Height="100">
+            <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </WrapPanel>
+    </Canvas>
 </Window>
