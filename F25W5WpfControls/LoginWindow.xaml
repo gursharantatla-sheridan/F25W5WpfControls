@@ -11,8 +11,8 @@
         <Label Content="Password" Canvas.Left="56" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <TextBox x:Name="txtUsername" Canvas.Left="159" TextWrapping="Wrap" Canvas.Top="47" Width="230" HorizontalAlignment="Left" VerticalAlignment="Center"/>
         <PasswordBox x:Name="pswPassword" Canvas.Left="159" Canvas.Top="109" Width="230" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-        <Button x:Name="btnLogin" Content="Login" Canvas.Left="82" Canvas.Top="182" Height="54" Width="127" Background="#FFAAE098"/>
-        <Button x:Name="btnCancel" Content="Cancel" Canvas.Left="240" Canvas.Top="182" Height="54" Width="127" Background="#FFF1B1A4" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnLogin" Content="Login" Canvas.Left="82" Canvas.Top="182" Height="54" Width="127" Background="#FFAAE098" Click="btnLogin_Click" IsDefault="True"/>
+        <Button x:Name="btnCancel" Content="Cancel" Canvas.Left="240" Canvas.Top="182" Height="54" Width="127" Background="#FFF1B1A4" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnCancel_Click" IsCancel="True"/>
 
     </Canvas>
 </Window>

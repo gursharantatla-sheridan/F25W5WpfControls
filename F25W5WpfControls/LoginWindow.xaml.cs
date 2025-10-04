@@ -19,9 +19,32 @@ namespace F25W5WpfControls
     /// </summary>
     public partial class LoginWindow : Window
     {
+        string username = "abc";
+        string password = "abc";
+
         public LoginWindow()
         {
             InitializeComponent();
+            txtUsername.Focus();
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtUsername.Text.Trim() == username && pswPassword.Password.Trim() == password)
+            {
+                MainWindow win = new MainWindow();
+                win.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username or password", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }
